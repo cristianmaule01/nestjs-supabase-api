@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules
+dist
+.env
+.DS_Store
+Thumbs.db
+
+# Build/Log/Configuration files
+npm-debug.log
+yarn-error.log
+.nyc_output
+/coverage
+/e2e
+docker-compose*.yml
+
+# Version control and editor files
+.git
+.github
+.vscode

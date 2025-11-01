@@ -1,0 +1,22 @@
+meta {
+  name: Create Group
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/groups
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "name": "My MTG Group",
+    "password": "optional_password"
+  }
+}

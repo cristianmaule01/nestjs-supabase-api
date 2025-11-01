@@ -1,0 +1,34 @@
+meta {
+  name: Create Deck
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/decks
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}
+
+body:json {
+  {
+    "name": "Atraxa Partners",
+    "description": "Atraxa and Ikra Shidiqi partner deck",
+    "commanders": [
+      {
+        "name": "Atraxa, Praetors' Voice",
+        "imageUrl": "https://cards.scryfall.io/normal/front/d/0/d0d33d52-3d28-4635-b985-51e126289259.jpg",
+        "scryfallId": "d0d33d52-3d28-4635-b985-51e126289259"
+      },
+      {
+        "name": "Ikra Shidiqi, the Usurper", 
+        "imageUrl": "https://cards.scryfall.io/normal/front/8/f/8f2abcc3-dc33-4b9d-a372-1d936e954f94.jpg",
+        "scryfallId": "8f2abcc3-dc33-4b9d-a372-1d936e954f94"
+      }
+    ]
+  }
+}

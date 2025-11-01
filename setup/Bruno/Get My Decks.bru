@@ -1,0 +1,15 @@
+meta {
+  name: Get My Decks
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/decks/my-decks
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{authToken}}
+}

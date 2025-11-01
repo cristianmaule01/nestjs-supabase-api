@@ -1,0 +1,15 @@
+meta {
+  name: Search Groups
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/groups/search?q=MTG
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
